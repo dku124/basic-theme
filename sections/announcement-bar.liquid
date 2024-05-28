@@ -1,0 +1,19 @@
+{%- if section.settings['show-anountcement'] -%}
+  <h2>Anountcement Bar</h2>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Anountcement",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show-anountcement",
+        "label": "Show Anountcement Bar",
+        "default": true
+      }
+    ],
+    "presets": []
+  }
+{% endschema %}
